@@ -1,0 +1,125 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #D3D3D3;
+}
+
+#title-extra {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  max-width: 200px;
+  background-color: #D1B48C;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #786750;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #A68F6F;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  max-width: 600px;
+  height: 100%;
+}
+
+#pf {
+  width: 25%;
+  max-width: 150px;
+  height: auto;
+  float: right;
+}
+
+h1 {
+  color: #A68F6F;
+}
+
+.introduction {
+  float: left;
+  width: 75%
+}
+
+#dreams, #awesome {
+  display: block;
+  width: 100%;
+  border: 2px solid #A68F6F;
+  clear: both;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+td{
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even){
+    background-color: white;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #D3D3D3;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar, #title-extra {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    display: block;
+    max-width: none;
+  }
+
+  #title-extra {
+    width: 20%;
+    margin: 0;
+    padding: 12px;
+  }
+
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 420px) {
+  body{
+    min-width: 400px;
+  }
+
+  #title-extra {
+    width: auto;
+  }
+
+  .sidebar a, #title-extra{
+    text-align: center;
+    float: none;
+  }
+}
