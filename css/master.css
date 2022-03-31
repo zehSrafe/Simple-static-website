@@ -105,8 +105,13 @@ tbody tr:nth-child(odd){
     padding: 12px;
   }
 
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  .sidebar a {
+    float: left;
+  }
+  
+  div.content {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 420px) {
