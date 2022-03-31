@@ -37,11 +37,14 @@ body {
   color: white;
 }
 
-div.content {
+.content, .about-content {
   margin-left: 200px;
-  padding: 1px 16px;
-  max-width: 600px;
+  padding: 16px;
   height: 100%;
+}
+
+.content {
+  max-width: 600px;
 }
 
 #pf {
@@ -89,6 +92,16 @@ tbody tr:nth-child(odd){
     background-color: #D3D3D3;
 }
 
+video {
+  display: none;
+  width: 100%;
+}
+
+#surprise-enabler{
+  text-align: center;
+  margin: auto;
+}
+
 @media screen and (max-width: 700px) {
   .sidebar, #title-extra {
     width: 100%;
@@ -108,7 +121,7 @@ tbody tr:nth-child(odd){
   .sidebar a {
     float: left;
   }
-  
+
   div.content {
     margin-left: 0;
   }
