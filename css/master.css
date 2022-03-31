@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
-  box-sizing: border-box;
   background-color: #D3D3D3;
+  font-family: 'Roboto', sans-serif;
 }
 
 #title-extra {
@@ -37,7 +41,7 @@ body {
   color: white;
 }
 
-.content, .about-content {
+.content, .clickbait-content {
   margin-left: 200px;
   padding: 16px;
   height: 100%;
@@ -50,6 +54,7 @@ body {
 #pf {
   width: 25%;
   max-width: 150px;
+  min-width: 100px;
   height: auto;
   float: right;
 }
@@ -103,6 +108,11 @@ video {
 }
 
 @media screen and (max-width: 700px) {
+  .content, .clickbait-content{
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
   .sidebar, #title-extra {
     width: 100%;
     height: auto;
@@ -121,19 +131,26 @@ video {
   .sidebar a {
     float: left;
   }
-
-  div.content {
-    margin-left: 0;
-  }
 }
 
 @media screen and (max-width: 420px) {
-  body{
-    min-width: 400px;
+  .content, .clickbait-content {
+    padding-top: 220px;
+    text-align: center;
   }
 
   #title-extra {
     width: auto;
+  }
+
+  .introduction {
+    width: 100%;
+  }
+
+  #pf {
+    float: none;
+    margin: auto;
+    display: block;
   }
 
   .sidebar a, #title-extra{
