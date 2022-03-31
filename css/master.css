@@ -48,7 +48,7 @@ body {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 #pf {
@@ -125,7 +125,7 @@ video {
   #title-extra {
     width: 20%;
     margin: 0;
-    padding: 12px;
+    padding: 10px;
   }
 
   .sidebar a {
@@ -133,7 +133,7 @@ video {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 435px) {
   .content, .clickbait-content {
     padding-top: 220px;
     text-align: center;
@@ -151,6 +151,7 @@ video {
     float: none;
     margin: auto;
     display: block;
+    width: 50%;
   }
 
   .sidebar a, #title-extra{
